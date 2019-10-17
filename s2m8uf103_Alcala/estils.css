@@ -1,0 +1,46 @@
+p {
+  width: 800px;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: justify;
+
+}
+img {
+  width: 100px;
+
+}
+div {
+  width: 800px;
+  margin: 0 auto;
+   }
+
+.esquerra {
+  float: left;
+  margin-right: 10px;
+  visibility: ;
+}
+
+.dreta {
+  float: right;
+  margin-left: 10px;
+
+}
+
+.capitular {float: left;
+            margin-left: 20px;
+            width: 100px;
+          }
+
+  .inicial {text-indent: -16px;
+  }
+
+.inicial::first-letter {color: white;
+}
+
+.c1 {width: 390px;
+     float: left;
+}
+
+.c2 {width: 390px;
+    float:right;
+  }
