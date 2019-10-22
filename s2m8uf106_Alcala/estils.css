@@ -1,0 +1,27 @@
+body{
+  margin: 0;
+  padding: 0;
+}
+div{
+  width: 200px;
+  height: 200px;
+  background-color: #7B68EE;
+  margin: 10px;
+  font-size: 96px;
+}
+
+.prova{
+  background-color: #87CEFA;
+  position: absolute;
+  margin: 0;
+  top: 40px;
+  left: 400px;
+}
+
+.prova2{
+  background-color: #ADD8E6;
+  position: absolute;
+  margin: 0;
+  top: 60px;
+  left: 420px;
+}
