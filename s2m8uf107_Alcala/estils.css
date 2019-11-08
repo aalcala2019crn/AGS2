@@ -1,0 +1,50 @@
+
+/* Mòbil Verticals*/
+
+@media screen and (max-width:640px) and (orientation:portrait){
+
+  body{
+    background-color: #E9CE7A;
+  }
+
+}
+
+/* Mòbil Apaisats*/
+
+@media screen and (max-width:640px) and (orientation:landscape){
+
+  body{
+    background-color: #CDE97A;
+  }
+
+}
+
+/* Escriptori*/
+
+@media screen and (min-width:1200px) {
+
+  body{
+    background-color: #7AE996;
+  }
+
+}
+
+/* Tablets Verticals*/
+
+@media screen and (min-width:401px) and (max-width:1200px) and (orientation:portrait){
+
+  body{
+    background-color: orange;
+  }
+
+}
+
+/* Tablets Apaisades*/
+
+@media screen and (min-width:401px) and (max-width:1200px) and (orientation:landscape){
+
+  body{
+    background-color: #E9967A;
+  }
+
+}
