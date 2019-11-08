@@ -1,10 +1,21 @@
+/*
+0.5em=800px
+1em=16px (Titulars)
+1.5em=24px (paràgrafs)
+2em=32px (interliniat)
+*/
+
+body{
+  font-size: ;
+}
+
 p {
   width: 800px;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.5em;
+  line-height: 1em;
   text-align: justify;
-
 }
+
 img {
   width: 100px;
 
@@ -31,7 +42,7 @@ div {
             width: 100px;
           }
 
-  .inicial {text-indent: -16px;
+.inicial {text-indent: -16px;
   }
 
 .inicial::first-letter {color: white;
@@ -44,3 +55,10 @@ div {
 .c2 {width: 390px;
     float:right;
   }
+
+h2{
+  font-family: Georgia, Times;
+  font-family: Helvetica, Arial, Sans-serif;
+  font-family: 'Lobster', cursive;
+  font-size: 1em;
+}
