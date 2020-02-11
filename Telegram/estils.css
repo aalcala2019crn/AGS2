@@ -1,0 +1,512 @@
+.contenidor {
+  background-color: ;
+  width: 70%;
+  min-height: 300px;
+  margin: 0 auto;
+
+}
+
+.tema {
+  overflow: hidden;
+  width: 300px;
+  height: 250px;
+  border-radius: 20px;
+  margin: 10px;
+  display: inline-block;
+}
+
+
+
+#default {
+  background-color: ANTIQUEWHITE;
+}
+
+.bocata1.esquerra.default {
+  background-color: ;
+  width: 200px;
+  min-height: 60px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px #DDD;
+  margin: 20px;
+  margin-left: 15px;
+}
+
+.bocata1.esquerra.default:before {
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 0.7em solid transparent;
+  border-top: 0.7em solid transparent;
+  border-left: 0.7em solid transparent;
+  border-bottom: 0.7em solid #FFF;
+  position: relative;
+  top: 38px;
+  left: -11px;
+}
+
+.bocata2.dreta.default {
+  background-color: ;
+  width: 200px;
+  min-height: 60px;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  box-shadow: -1px 2px 3px #DDD;
+  float: right;
+  margin-right: 15px;
+  opacity: 50%;
+
+}
+
+.bocata2.dreta.default:before {
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 0.7em solid transparent;
+  border-top: 0.7em solid transparent;
+  border-left: 0.7em solid transparent;
+  border-bottom: 0.7em solid #FFF;
+  position: relative;
+  top: 38px;
+  left: 189px;
+}
+
+.esquerra.default {
+  transform: scale(1,1);
+  background-color: #FFF;
+}
+
+.dreta.default {
+  transform: scale(1,1);
+  background-color: #FFF;
+  opacity: 50%,
+}
+
+
+
+
+
+
+.boto{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: solid #FFF;
+  background-color: ##800080;
+  margin: 0 auto;
+  margin-top: 130px;
+  opacity: 90%;
+}
+
+.boto:after {
+  content:"";
+  display: block;
+  position: relative;
+  top: 5px;
+  left: 5px;
+  width: 10px;
+  height:10px;
+  border-radius: 50%;
+  background-color: white;
+}
+
+
+
+
+
+
+#mono {
+  background-color: CORNFLOWERBLUE;
+}
+
+
+.bocata1.esquerra.mono {
+  background-color: ;
+  width: 200px;
+  min-height: 60px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px #DDD;
+  margin: 20px;
+  margin-left: 15px;
+}
+
+.bocata1.esquerra.mono:before {
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 0.7em solid transparent;
+  border-top: 0.7em solid transparent;
+  border-left: 0.7em solid transparent;
+  border-bottom: 0.7em solid #FFF;
+  position: relative;
+  top: 38px;
+  left: -11px;
+}
+
+.bocata2.dreta.mono {
+  background-color: ;
+  width: 200px;
+  min-height: 60px;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  box-shadow: -1px 2px 3px #DDD;
+  float: right;
+  margin-right: 15px;
+
+}
+
+.bocata2.dreta.mono:before {
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 0.7em solid transparent;
+  border-top: 0.7em solid transparent;
+  border-left: 0.7em solid transparent;
+  border-bottom: 0.7em solid #FFF;
+  position: relative;
+  top: 38px;
+  left: 189px;
+}
+
+.esquerra.mono {
+  transform: scale(1,1);
+  background-color: #FFF;
+}
+
+.dreta.mono {
+  transform: scale(1,1);
+  background-color: #FFF;
+  opacity: 50%;
+}
+
+
+
+
+#dark {
+  background-color: #2D2654;
+}
+
+.bocata1.esquerra.dark {
+  background-color: ;
+  width: 200px;
+  min-height: 60px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px #DDD;
+  margin: 20px;
+  margin-left: 15px;
+}
+
+.bocata1.esquerra.dark:before {
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 0.7em solid transparent;
+  border-top: 0.7em solid transparent;
+  border-left: 0.7em solid transparent;
+  border-bottom: 0.7em solid #FFF;
+  position: relative;
+  top: 38px;
+  left: -11px;
+}
+
+.bocata2.dreta.dark {
+  background-color: ;
+  width: 200px;
+  min-height: 60px;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  box-shadow: -1px 2px 3px #DDD;
+  float: right;
+  margin-right: 15px;
+
+}
+
+.bocata2.dreta.dark:before {
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 0.7em solid transparent;
+  border-top: 0.7em solid transparent;
+  border-left: 0.7em solid transparent;
+  border-bottom: 0.7em solid LAVENDER;
+  position: relative;
+  top: 38px;
+  left: 189px;
+}
+
+.esquerra.dark {
+  transform: scale(1,1);
+  background-color: #FFF;
+}
+
+.dreta.dark {
+  transform: scale(1,1);
+  background-color: #FFF;
+  opacity: 50%;
+}
+
+
+
+
+
+
+#artic {
+  background-color: #F0EAEA ;
+}
+
+
+.bocata1.esquerra.artic {
+  background-color: ;
+  width: 200px;
+  min-height: 60px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px #DDD;
+  margin: 20px;
+  margin-left: 15px;
+}
+
+.bocata1.esquerra.artic:before {
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 0.7em solid transparent;
+  border-top: 0.7em solid transparent;
+  border-left: 0.7em solid transparent;
+  border-bottom: 0.7em solid #FFF;
+  position: relative;
+  top: 38px;
+  left: -11px;
+}
+
+.bocata2.dreta.artic {
+  background-color: ;
+  width: 200px;
+  min-height: 60px;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  box-shadow: -1px 2px 3px #DDD;
+  float: right;
+  margin-right: 15px;
+
+}
+
+.bocata2.dreta.artic:before {
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 0.7em solid transparent;
+  border-top: 0.7em solid transparent;
+  border-left: 0.7em solid transparent;
+  border-bottom: 0.7em solid OLIVEDRAB;
+  position: relative;
+  top: 38px;
+  left: 189px;
+}
+
+.esquerra.artic {
+  transform: scale(1,1);
+  background-color: #FFF;
+}
+
+.dreta.artic {
+  transform: scale(1,1);
+  background-color:
+OLIVEDRAB;
+  opacity: 40%;
+}
+
+
+
+
+
+.tema3 {
+  overflow: hidden;
+  width: 98%;
+  height: 250px;
+  border-radius: 20px;
+  margin: 10px;
+
+}
+
+#chat {
+  background-color: ANTIQUEWHITE;
+}
+
+.bocata3.esquerra3.chat {
+  background-color: ;
+  width: 500px;
+  min-height: 60px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px #DDD;
+  margin: 20px;
+  margin-left: 15px;
+}
+
+.bocata3.esquerra3.chat:before {
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 0.7em solid transparent;
+  border-top: 0.7em solid transparent;
+  border-left: 0.7em solid transparent;
+  border-bottom: 0.7em solid #E9967A;
+  position: relative;
+  top: 38px;
+  left: -11px;
+}
+
+.bocata4.dreta4.chat {
+  background-color: #FFC492;
+  width: 500px;
+  min-height: 60px;
+  border-radius: 10px;
+  position: relative;
+  top: 20px;
+  box-shadow: -1px 2px 3px #DDD;
+  float: right;
+  margin-right: 15px;
+
+}
+
+.bocata4.dreta4.chat:before {
+  content:"";
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 0.7em solid transparent;
+  border-top: 0.7em solid transparent;
+  border-left: 0.7em solid transparent;
+  border-bottom: 0.7em solid #FFC492;
+  position: relative;
+  top: 38px;
+  left: 488px;
+}
+
+.esquerra3.chat {
+  transform: scale(1,1);
+  background-color: #E9967A;
+}
+
+.dreta4.chat {
+  transform: scale(1,1);
+  background-color: #FFC492;
+}
+
+
+
+#barra{
+  width: 55rem;
+  height: 7rem;
+  overflow-x: scroll;
+  background-color: ;
+  overflow-y: hidden;
+
+  margin-left: 270px;
+}
+
+.circulos{
+  width: 150%;
+  height: 4rem;
+}
+
+.bola {
+      width: 5rem;
+      height: 5rem;
+      border-radius:50%;
+      margin: 0 auto;
+      margin-left: 20px;
+	margin: 10px;
+	display: inline-block;
+
+    }
+
+
+
+#barra1{
+  width: 55rem;
+  height: 7rem;
+  overflow-x: scroll;
+  background-color: ;
+  overflow-y: hidden;
+
+  margin-left: 270px;
+}
+
+.circulos1{
+  width: 150%;
+  height: 4rem;
+}
+
+.bola1 {
+      width: 5rem;
+      height: 5rem;
+      border-radius:50%;
+      margin: 0 auto;
+      margin-left: 20px;
+	margin: 10px;
+	display: inline-block;
+    }
+
+
+#barra2{
+  width: 55rem;
+  height: 7rem;
+  overflow-x: scroll;
+  background-color: ;
+  overflow-y: hidden;
+
+  margin-left: 270px;
+}
+
+.circulos2{
+  width: 150%;
+  height: 4rem;
+}
+
+.bola2 {
+      width: 5rem;
+      height: 5rem;
+      border-radius:50%;
+      margin: 0 auto;
+      margin-left: 20px;
+	margin: 10px;
+	display: inline-block;
+    }
+
+
+
+
+
+
+input[type=color] {
+   width: 5rem;
+   height: 5rem;
+   border-radius:50%;
+   border: none;
+}
+
+
+input[type=color]:focus{
+  -webkit-appearance: none;
+
+}
+
+input[type=color]::-webkit-color-swatch-wrapper{
+  border-radius: 50%;
+}
+
+input[type=color]::-webkit-color-swatch{
+  border-radius: 50%;
+}
