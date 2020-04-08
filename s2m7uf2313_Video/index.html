@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ariadna Alcala video</title>
+
+</head>
+
+<style media="screen">
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+  }
+
+  #contenidor{
+    width: 70%;
+    height: auto;
+    margin: 0 auto;
+    background-color: navy;
+
+  }
+
+  #gran{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    float: left;
+
+    background: red;
+    margin-top: 90px;
+  }
+
+  #petit{
+    width: 35%;
+    height: auto;
+    background: ;
+
+    float: right;
+    margin-top: 40px;
+  }
+
+  #petit img{
+
+    background-color: ;
+    width: 20%;
+    height: auto;
+    margin-left: 100px;
+    display: block;
+
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  .vi{
+    width: 50%;
+    height: auto;
+  }
+
+  #vide{
+    width: 100%;
+    height: auto;
+  }
+
+
+
+</style>
+
+<body>
+
+  <div id="contenidor">
+
+      <div id="gran">
+        <video id="vide" src="video/01.mp4" autoplay controls></video>
+      </div>
+
+
+    <div id="petit">
+      <video class="vi" src="video/01.mp4"></video>
+      <video class="vi" src="video/02.mp4"></video>
+      <video class="vi" src="video/03.mp4"></video>
+      <video class="vi" src="video/04.mp4"></video>
+    </div>
+
+     <!-- poster="imagen del video" -->
+
+  </div>
+
+  <script type="text/javascript">
+
+    var imatgran=document.getElementById('vide');
+    var imatge=document.getElementsByClassName('vi');
+
+
+    imatge[0].addEventListener('click',imatge0);
+    imatge[1].addEventListener('click',imatge1);
+    imatge[2].addEventListener('click',imatge2);
+    imatge[3].addEventListener('click',imatge3);
+
+
+
+    function imatge0(){
+      // imatge.src="img/01.jpg";
+      imatgran.src=imatge[0].src;
+      }
+
+    function imatge1(){
+      // imatge.src="img/02.jpg";
+      imatgran.src=imatge[1].src;
+      }
+    function imatge2(){
+      // imatge.src="img/03.jpg";
+      imatgran.src=imatge[2].src;
+      }
+
+    function imatge3(){
+      // imatge.src="img/04.jpg";
+      imatgran.src=imatge[3].src;
+      }
+
+
+  </script>
+
+</body>
+</html>
+
+
+<!-- eunterest.eslrocks.com/collections/dresses/products/hime-dress-satin-blue-rose -->
