@@ -1,0 +1,669 @@
+body{
+  background-color: #fff;
+  font-family: 'Righteous', cursive;
+  font-size: 1em;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+/*principio*/
+
+.contingut{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+
+  /* este "contingut" hace que no tenga ningún tipo de margen */
+  background-image: url(../img/bar.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.cap{
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  height: 0px;
+  background-color: #EA7659;
+}
+
+/*.cos{
+  position: fixed;
+  top:80px;
+  left:0;
+  right:0;
+  bottom: 80px;
+  background-color: ;
+  overflow-y: auto;
+}
+
+.peu{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+}
+*/
+.boto{
+  position: fixed;
+  bottom: 140px;
+  right: 40px;
+  height: 100px;
+  width: 100px;
+  border-radius:50%;
+  background-color: #EA7659;
+}
+
+.boto p{
+  line-height: 100px;
+  font-size: 3em;
+  margin-left: 30px;
+  color: white;
+}
+
+/*entrarusuario*/
+
+.entrarusuario{
+  background: #DDDDDD;
+}
+
+
+
+.cuadro{
+  position: absolute;
+  left: 2.12%;
+  right: 1.48%;
+  top: 24.16%;
+  bottom: 23.79%;
+  border-radius: 10%;
+
+  background: white;
+}
+
+.cuadro ul{
+  margin-top: 0px:;
+}
+
+.cuadro li{
+  background: ;
+  display:block;
+  margin: 0 auto;
+  text-align:center;
+}
+.nomsencer {
+  position: static;
+  margin-top: 200px;
+}
+.nom{
+    font-size: 3em;
+    line-height: 1em;
+}
+
+.ape {
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 30px;
+}
+
+.contrasena{
+  margin-top: 50px;
+}
+
+.contrasena p{
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.contrasena li{
+  text-align:left;
+  margin-left: 10%;
+}
+
+.recuadro{
+  background-color: ;
+  width: 800px;
+  height: 70px;
+  border: 2px solid #DDDDDD;
+  line-height: 70px;
+}
+
+.anadir li{
+  text-align:left;
+  margin-left: 11%;
+}
+
+.anadir p{
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+
+.cruz{
+  background-image: url(../img/añadir.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  left:;
+  bottom: 40%;
+}
+
+.entrar li{
+  margin-top: 150px;
+  width: 500px;
+  height: 150px;
+  background-color: #EA7659;
+  border-radius: 100px;
+}
+
+.entrar p{
+  font-size: 3.5em;
+  line-height: 150px;
+}
+
+
+
+
+/*anadirusuario*/
+
+.nom2{
+  margin-top: ;
+}
+
+.nom2 p{
+  font-size: 2em;
+  line-height: 1em;
+  margin-top: 50%;
+}
+
+.nom2 li{
+  text-align:left;
+  margin-left: 10%;
+  list-style:none;
+}
+
+.ape2{
+  margin-top: 50px;
+}
+
+.ape2 p{
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.ape2 li{
+  text-align:left;
+  margin-left: 10%;
+  list-style:none;
+}
+
+
+.contra2{
+  margin-top: 50px;
+}
+
+.contra2 p{
+  font-size: 2em;
+  line-height: 1em;
+}
+
+.contra2 li{
+  text-align:left;
+  margin-left: 10%;
+  list-style:none;
+}
+
+.registrar li{
+
+  margin: 0 auto;
+  height: 150px;
+  background-color: #EA7659;
+  border-radius: 100px;
+  list-style:none;
+}
+
+.registrar p{
+  font-size: 3.5em;
+  line-height: 150px;
+  text-align: center;
+}
+
+.registrar a{
+  width: 500px;
+  height: 150px;
+  display: block;
+  margin: 200px auto 0 auto;
+}
+
+
+
+/*mesas*/
+.arriba{
+  background-color: white;
+  height: 30px;
+
+}
+.mesas li{
+  margin:auto;
+  margin-top: 15px;
+  width: 500px;
+  height: 150px;
+  background-color: #EA7659;
+  border-radius: 100px;
+  list-style:none;
+}
+
+.mesas p{
+  text-align: center;
+  line-height: 150px;
+    font-size: 3.5em;
+}
+
+.traiangulo{
+  background-image: url(../img/atras.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+
+  position: fixed;
+  width: 100px;
+  height: 100px;
+  left:50px;
+  top:75px;
+}
+
+.traiangulo p{
+  text-align: center;
+  line-height: 100px;
+  color: #424949;
+}
+
+.traiangulo li{
+  list-style: none;
+}
+
+
+/*opciones*/
+.fondo{
+  margin: auto;
+}
+
+
+.fondo li{
+  margin:auto;
+  margin-top: 15px;
+  width: 500px;
+  height: 100px;
+  background-color: #C0C0C0;
+  border-radius: 100px;
+  list-style:none;
+}
+
+.fondo p{
+  text-align: center;
+  line-height: 100px;
+    font-size: 3.5em;
+}
+
+
+
+/*opcionescomer*/
+.cuerpo{
+  margin-top: 25%;
+  margin-left: 15%;
+}
+.opciones ul{
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 300px;
+  height: 300px;
+  border-radius: 20%;
+  background-color: #EA7659;
+  display: inline-block;
+}
+
+.opciones p{
+  line-height: 300px;
+  font-size: 3em;
+  text-align: center;
+}
+
+.opciones li{
+  list-style: none;
+}
+
+
+/*cafe*/
+.cuerpo2{
+  margin-left: ;
+}
+.opciones2 ul{
+  margin-left: 5px;
+  margin-top: 60px;
+  width: 130px;
+  height: 130px;
+  border-radius: 20%;
+  background-color: #EA7659;
+  display: inline-block;
+}
+
+
+#arribacafe{
+background-image: url(../img/cafe.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 50%;
+}
+
+#arribaalcohol{
+background-image: url(../img/copa.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 50%;
+}
+
+#arribavino{
+background-image: url(../img/vino.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 30%;
+}
+
+#arribacerveza{
+background-image: url(../img/cerveza.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 50%;
+}
+
+#arribabollo{
+background-image: url(../img/bollo.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 70%;
+}
+
+#arribabocadillo{
+background-image: url(../img/bocadillo.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 70%;
+}
+
+#arribaabebida{
+background-image: url(../img/bebida.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 50%;
+}
+
+.opciones2 p{
+  line-height: 130px;
+  text-align: center;
+  color: #EA7659;
+}
+
+.opciones2 li{
+  list-style: none;
+}
+
+.cafes{
+  margin-top: 50px;
+  margin-left: 50px;
+}
+
+.cafes ul{
+  background-color: #DDDDDD;
+  width: 200px;
+  height: 200px;
+  list-style: none;
+  border-radius: 50%;
+  display: block;
+}
+
+.cafes p{
+  margin-left: 250px;
+  margin-top: 15px;
+  font-size: 3em;
+  width: 500px;
+  line-height: 200px;
+}
+
+#imgcafe{
+background-image: url(../img/imgcafe.png);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 120%;
+}
+
+#cortado{
+background-image: url(../img/cafecortado.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 150%;
+}
+
+#cafeleche{
+background-image: url(../img/cafeleche.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: 150%;
+}
+
+/*vino*/
+#legarisv{
+background-image: url(../img/___.png);
+background-repeat: no-repeat;
+background-position: right;
+background-size: 100%;
+}
+
+/*alcohol*/
+#chupito{
+background-image: url(../img/___.png);
+background-repeat: no-repeat;
+background-position: right;
+background-size: 100%;
+}
+
+/*cerveza*/
+#estrella{
+background-image: url(../img/___.png);
+background-repeat: no-repeat;
+background-position: right;
+background-size: 100%;
+}
+
+/*bebida*/
+#refrescos{
+background-image: url(../img/___.png);
+background-repeat: no-repeat;
+background-position: right;
+background-size: 100%;
+}
+
+
+/*opcion bocadillo*/
+.fondo{
+  margin-top: 600px;
+}
+
+
+.frio{
+  margin-top: 10px;
+  width: 100%;
+  height: 50px;
+  background-color:#DDDDDD;
+}
+
+.frio p{
+  font-size: 2em;
+  line-height: 50px;
+  text-align: center;
+}
+
+/*bocata frio*/
+#serrano{
+background-image: url(../img/___.png);
+background-repeat: no-repeat;
+background-position: right;
+background-size: 100%;
+}
+
+/*bocata caliente*/
+#lomo{
+background-image: url(../img/___.png);
+background-repeat: no-repeat;
+background-position: right;
+background-size: 100%;
+}
+
+
+
+/*revisar pedido*/
+
+.mesa1 li{
+  margin:auto;
+  margin-top: 15px;
+  width: 500px;
+  height: 150px;
+  background-color: #DDDDDD;
+  border-radius: 100px;
+  list-style:none;
+}
+
+.mesa1 p{
+  text-align: center;
+  line-height: 150px;
+    font-size: 3.5em;
+}
+
+.barra{
+  margin-top: 100px;
+  position: relative;
+  display: block;
+}
+
+.barra li{
+  background-color: #DDDDDD;
+  margin-top: 40px;
+  margin-left: 50px;
+  width: 500px;
+  height: 50px;
+  list-style: none;
+  float: left;
+}
+
+.cantidad{
+  margin-top: -270px;
+  float: right;
+  margin-right: 130px;
+}
+
+.cantidad li{
+  list-style: none;
+}
+
+.cantidad p{
+  font-size: 2.5em;
+  list-style: none;
+  margin-top: 40px;
+}
+
+#izquierda{
+  background-image: url(../img/cruz.png);
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 70%;
+}
+
+#derecha{
+  background-image: url(../img/cruz.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 100%;
+}
+
+.confirmar{
+  position: relative;
+  margin: 0 auto;
+  margin-top:600px;
+  background: ;
+}
+.confirmar li{
+  margin:auto;
+  margin-bottom: 15px;
+  width: 500px;
+  height: 150px;
+  background-color: #EA7659;
+  border-radius: 100px;
+  list-style:none;
+}
+
+.confirmar p{
+  text-align: center;
+  line-height: 150px;
+  font-size: 3.5em;
+}
+
+
+  /*cuenta*/
+
+.barra2{
+    margin-top: 100px;
+  }
+
+.barra2 li{
+    background-color: #DDDDDD;
+    margin-top: 40px;
+    margin-left: 50px;
+    width: 500px;
+    height: 50px;
+    list-style: none;
+    float: left;
+  }
+
+  .m1 li{
+    margin:auto;
+    margin-top: 15px;
+    list-style:none;
+  }
+
+  .m1 p{
+    text-align: center;
+    line-height: 150px;
+      font-size: 6em;
+  }
+
+
+
+.total{
+  margin:0 auto;
+  margin-top: 700px;
+  margin-left: 200px;
+}
+
+.total li{
+  width: 500px;
+  height: 150px;
+  background-color: #EA7659;
+  border-radius: 100px;
+  list-style:none;
+}
+
+.total p{
+  text-align: center;
+  line-height: 150px;
+  font-size: 3.5em;
+}
