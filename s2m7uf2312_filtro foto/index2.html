@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+<body>
+
+<!-- accept="imatge/*" acepta todo tipo de imagenes
+    multiple="true"- nos permite añadir más de un archivo de: imagen, video...-->
+
+  <input type="file" accept="imatge/*" multiple="true" id="contingut">
+
+  <input type="range" id="tira" min="0" max="25">
+  <img/>
+
+
+  <script type="text/javascript">
+    var contingut=document.getElementById('contingut');
+    var imatge=document.getElementsByTagName('img');
+
+
+      contingut.addEventListener('change', canvia)
+
+    function canvia(){
+      imatge[0].src=URL.createObjectURL(event.target.files[0]);
+      imatge[1].src=URL.createObjectURL(event.target.files[1]);
+    }
+
+    var tirador=document.getElementById('tira');
+
+    tirador.addEventListener('input',desenfocar);
+
+      function desenfocar(){
+        imatge[0].style.webkitFilter="blur("+tirador.value+"px)";
+      }
+
+
+  </script>
+
+</body>
+</html>
