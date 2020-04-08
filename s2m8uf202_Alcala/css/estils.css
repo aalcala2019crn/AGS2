@@ -1,0 +1,206 @@
+body {
+background: ;
+}
+
+ul {
+  height: ;
+  background: ;
+}
+
+.grid_12{
+  margin-left: 0;
+}
+
+.container_12 div {
+  height: 60px;
+  border-radius: 5px;
+  margin-top: px;
+}
+
+.barra1 {
+  background: white;
+  padding: 0;
+}
+
+.barra1 li{
+  display: inline;
+  font-size: 14px;
+  font-family: 'Spartan', serif;
+  color: #000;
+  top: 40px;
+}
+
+
+.barra1 p{
+  text-align: center;
+}
+
+
+.nivel2{
+  width: 960px;
+  height: auto;
+
+  margin: 0 auto;
+}
+
+
+
+.nivel3{
+  width: 960px;
+  height: auto;
+  background: white;
+  margin-top: 10px;
+}
+
+.nivel3 p{
+  text-align: center;
+  font-size: 18px;
+}
+
+.nivel4{
+  background: white;
+  margin-top:50px;
+  padding: 0;
+}
+
+.nivel4 li{
+  display:  inline-block;
+  background: ;
+}
+
+.nivel4 p{
+line-height: 0px;
+text-align: center;
+
+font-size: 18px;
+font-family: 'Spartan', serif;
+color: #000;
+}
+
+.nivel4 hr{
+     /* es una especie de margin */
+  font-size: 30px;
+
+      /* grosor del filete */
+  border: 0.5px solid #000000;
+}
+
+.nivel6{
+  background: ;
+}
+
+.nivel7{
+  background: ;
+
+}
+
+.nivel7 p{
+  font-size: 14px;
+  font-family: 'Spartan', serif;
+}
+
+.nivel7 li{
+  text-align: center;
+}
+
+.nivel8 hr{
+     /* es una especie de margin */
+  font-size: -10px;
+
+      /* grosor del filete */
+  border: 1px solid #000000;
+}
+
+
+.nivel9 p{
+  font-size: 12px;
+  font-family: 'Spartan', serif;
+}
+
+.nivel9 li{
+  text-align: center;
+}
+
+.nivel10 p{
+  font-size: 12px;
+  font-family: 'Spartan', serif;
+}
+
+.nivel10 li{
+  text-align: center;
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:visited{
+  color: #000;
+}
+/* PRODUCTO */
+
+.nivel02{
+  margin-top: 80px;
+}
+
+.nivel02 h2{
+  color: coral;
+}
+
+#comprar{
+  margin: 0 auto;
+  margin-top: 70px;
+  height: 60px;
+  width: 340px;
+  background: coral;
+
+  line-height: 60px;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}
+
+
+#anadir{
+  margin: auto;
+  margin-top: 180px;
+  background-color: blue;
+
+}
+
+#anadir img{
+  width: auto;
+  height: 20px;
+}
+
+
+#descripcion h3{
+  text-align: center;
+}
+
+#descripcion p{
+  text-align: center;
+}
+
+#productos02 hr{
+       /* es una especie de margin */
+    font-size: -10px;
+
+        /* grosor del filete */
+    border: 2px solid #FF7F50;
+}
+
+#productos02 h2{
+    font-size: -10px;
+    font-family: times;
+    text-align: center;
+
+}
+
+a:link{
+  text-decoration: none;
+}
+
+a:visited{
+  color: #000;
+}
