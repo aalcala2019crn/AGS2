@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Ariadna Alcala3</title>
+
+</head>
+
+<style media="screen">
+
+  body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+  }
+
+  #contenidor{
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    background-color: ;
+  }
+
+  #gran{
+    width: 100%;
+    padding: 0;
+  }
+
+  #petit{
+    width: 120%;
+    height: auto;
+    background: ;
+
+    float: left;
+    margin: 0 auto;
+    margin-left: -80%;
+    margin-top: -150%;
+
+
+  }
+
+  #petit img{
+
+    background-color: ;
+    width: 20%;
+    height: auto;
+    margin-left: 100px;
+    display: block;
+
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  ul{
+    text-align: center;
+  }
+
+  li{
+    display: inline-block;
+    font-size: 72px;
+    font-weight: 900;
+  }
+
+</style>
+
+<body>
+
+  <div id="contenidor">
+
+
+    <ul>
+      <li id="enrere"><</li>
+      <li id="num"></li>
+      <li id="endavant">></li>
+    </ul>
+
+
+      <img id="imatgran" src="img/01.jpg" id="gran">
+
+
+    <div id="petit" class="mini">
+      <img class="imatge" src="img/01.jpg" id="uno">
+      <img class="imatge"  src="img/02.jpg" id="dos">
+      <img class="imatge"  src="img/03.jpg" id="tres">
+      <img class="imatge"  src="img/04.jpg" id="cuatro">
+    </div>
+
+  </div>
+
+  <script type="text/javascript">
+
+  document.getElementById('enrere').addEventListener('click',enrere);
+  document.getElementById('endavant').addEventListener('click',endavant);
+
+  var num=document.getElementById('num');
+  var i=0;
+
+  var imatgran=document.getElementById('imatgran');
+  var imatge=document.getElementsByClassName('imatge');
+
+
+
+  function enrere(){
+    if (i==0) {i=imatge.length-1;}
+    else {i--;}
+    num.innerHTML=i;
+    imatgran.src=imatge[i].src;
+  }
+
+  function endavant(){
+    if (i==imatge.length-1) {i=0;}
+    else {i++;}
+    num.innerHTML=i;
+    imatgran.src=imatge[i].src;
+  }
+
+
+  imatge[0].addEventListener('mouseover',imatge0);
+  imatge[1].addEventListener('mouseover',imatge1);
+  imatge[2].addEventListener('mouseover',imatge2);
+  imatge[3].addEventListener('mouseover',imatge3);
+
+
+
+  function imatge0(){
+    // imatge.src="img/01.jpg";
+    imatgran.src=imatge[0].src;
+    }
+
+  function imatge1(){
+    // imatge.src="img/02.jpg";
+    imatgran.src=imatge[1].src;
+    }
+  function imatge2(){
+    // imatge.src="img/03.jpg";
+    imatgran.src=imatge[2].src;
+    }
+
+  function imatge3(){
+    // imatge.src="img/04.jpg";
+    imatgran.src=imatge[3].src;
+    }
+
+
+  </script>
+
+</body>
+</html>
+
+
+<!-- eunterest.eslrocks.com/collections/dresses/products/hime-dress-satin-blue-rose -->
