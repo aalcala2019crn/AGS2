@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>PhotoFilter</title>
+
+  <style>
+
+    *{
+      position: relative;
+      font-family: Helvetica, Sans-Serif;
+      text-align: center;
+    }
+
+    ul {
+      width: 960px;
+      margin: auto;
+    }
+
+    li {
+      height: 420px;
+      width: 180px;
+      margin: 4px;
+      background-color: #FEFEFE;
+ background-image: linear-gradient(45deg, #CBCBCB 25%, transparent 25%, transparent 75%, #CBCBCB 75%, #CBCBCB), linear-gradient(45deg, #CBCBCB 25%, transparent 25%, transparent 75%, #CBCBCB 75%, #CBCBCB);
+ background-size:10px 10px;
+ background-position:0 0, 15px 15px;
+
+      /* background: repeating-linear-gradient(90deg, #ddd 0px, #ddd 4px, transparent 4px, transparent 8px),
+                  repeating-linear-gradient(180deg, #ddd 0px, #ddd 4px, transparent 4px, transparent 8px);
+      background: ; */
+
+      display: block;
+      float: left;
+      padding: 2px;
+    }
+
+    h1{
+      box-sizing: content-box;
+      border: 5px solid turquoise;
+      width: 100px;
+      height: 100px;
+      background: linear-gradient(135deg, navy, black);
+      margin: 20px auto;
+      border-radius: 5px;
+      box-shadow: 1px 1px 1px grey;
+      color: turquoise;
+      font-size: 72px;
+      line-height: 100px;
+    }
+
+    .desenfocar img{
+      -webkit-filter: blur(5px);
+    }
+
+    .gris img{
+      -webkit-filter: grayscale(100%);
+    }
+
+    .ombra img{
+      -webkit-filter: drop-shadow(6px 6px 6px orange);
+    }
+
+    .sepia img{
+      -webkit-filter: sepia(100%);
+    }
+
+    .lluminositat img{
+      -webkit-filter: brightness(700%);
+    }
+
+    .contrast img{
+      -webkit-filter: contrast(200%);
+    }
+
+    .to img{
+      -webkit-filter: hue-rotate(100deg);
+    }
+
+    .invertir img{
+      -webkit-filter: invert(200%);
+    }
+
+    .saturar img{
+      -webkit-filter: saturate(350%);
+    }
+
+    .opacitat img{
+      -webkit-filter: opacity(50%);
+    }
+
+
+
+  </style>
+
+</head>
+<body>
+  <h1>Ps</h1>
+
+  <ul>
+    <li class="efectes desenfocar">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" width="100%" alt="">
+      <h2>Desenfocar</h2>
+      <input type="range" id=" " min="0" max="25">
+      <p></p>
+    </li>
+
+    <li class="efectes gris">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" width="100%" alt="">
+      <h2>Gris</h2>
+      <input type="range">
+      <p></p>
+    </li>
+
+    <li class="efectes ombra">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" width="100%" alt="">
+      <h2>Ombra paral·lela</h2>
+      <input type="range"   min="0" max="20">
+      <p></p>
+    </li>
+
+    <li class="efectes sepia">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" width="100%" alt="">
+      <h2>Sepia</h2>
+      <input type="range">
+      <p></p>
+    </li>
+
+    <li class="efectes lluminositat">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" width="100%" alt="">
+      <h2>Lluminositat</h2>
+      <input type="range"  min="0" max="1000">
+      <p></p>
+    </li>
+
+    <li class="efectes contrast">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" width="100%" alt="">
+      <h2>Contrast</h2>
+      <input type="range"  min="0" max="1000">
+      <p></p>
+    </li>
+
+    <li class="efectes to">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" width="100%" alt="">
+      <h2>To</h2>
+      <input type="range" min="0" max="360">
+      <p></p>
+    </li>
+
+    <li class="efectes invertir">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" width="100%" alt="">
+      <h2>Invertir</h2>
+      <input type="range">
+      <p></p>
+    </li>
+
+    <li class="efectes saturar">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" width="100%" alt="">
+      <h2>Saturar</h2>
+      <input type="range"  min="0" max="1000">
+      <p></p>
+    </li>
+
+    <li class="efectes opacitat">
+      <img src="https://www.stickpng.com/assets/images/580b57fcd9996e24bc43c1a0.png" width="100%" alt="">
+      <h2>Opacitat</h2>
+      <input type="range">
+      <p></p>
+    </li>
+
+
+  </ul>
+
+</body>
+
+<script type="text/javascript" src="imatge.js">
+</script>
+
+
+</html>
