@@ -1,0 +1,194 @@
+.flor{
+  width: 204px;
+  height: 204px;
+  margin: 200px auto;
+
+  animation: rotacio 4s infinite linear;
+  transform-origin: center center;
+
+      /* tipus d'acceleracions*/
+  /*animation-timing-function:linear;*/
+}
+
+.petal{
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  background: CORAL;
+  border-radius: 0 100px 0 100px;
+  transform-origin: right bottom;
+  border: solid 1px LIGHTSALMON;
+
+
+
+  /*animation-name: aniflor; */
+
+        /*duración*/
+  /*animation-duration: 2s;
+
+        /*tiempo que tarda en empezar*/
+  /*animation-delay: 2s;
+
+        /*veces que lo repite*/
+  /*animation-iteration-count: infinite;*/
+
+        /*cambia de dirección ej: verde-rojo / rojo-verde*/
+  /*animation-direction: alternate-reverse;*/
+  animation: aniflor 2s infinite alternate-reverse;
+}
+
+
+#p01{
+  transform: rotate(0deg);
+}
+
+#p02{
+  transform: rotate(30deg);
+}
+
+#p03{
+  transform: rotate(60deg);
+}
+
+#p04{
+  transform: rotate(90deg);
+}
+
+#p05{
+  transform: rotate(120deg);
+}
+
+#p06{
+  transform: rotate(150deg);
+}
+
+#p07{
+  transform: rotate(180deg);
+}
+
+#p08{
+  transform: rotate(210deg);
+}
+
+#p09{
+  transform: rotate(240deg);
+}
+
+#p10{
+  transform: rotate(270deg);
+}
+
+#p11{
+  transform: rotate(300deg);
+}
+
+#p12{
+  transform: rotate(330deg);
+}
+
+
+
+#cor{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background: MOCCASIN;
+  border-radius: 50%;
+  border: solid 1px LIGHTSALMON;
+  top: 75px;
+  left: 75px;
+}
+
+
+/*animación de la flor*/
+
+@keyframes aniflor {
+  0% {
+    background: LIGHTSALMON;
+  }
+  50% {
+    background: INDIANRED;
+  }
+  100% {
+    background: FIREBRICK;
+  }
+}
+
+@keyframes rotacio {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.esquerra{
+  margin: 100px auto 100px 0;
+}
+
+.centre{
+  margin: 100px auto;
+}
+
+
+.dreta{
+  margin: 100px 0 100px auto;
+}
+
+
+
+/*COR*/
+
+.heart{
+  margin-left: 100px;
+  position: relative;
+
+  animation: bategan 2s infinite;
+}
+
+
+.love {
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background: FIREBRICK;
+  border-radius: 50px 50px 0 0;
+
+    transform: rotate(45deg);
+
+    /*50= a x(el largo)  100= a Y(el alto)*/
+    transform-origin: 50px 100px;
+
+
+}
+
+.love2 {
+  position:absolute;
+
+  width: 100px;
+  height: 150px;
+  background: FIREBRICK;
+  border-radius: 50px 50px 0 0;
+
+    transform: rotate(-45deg);
+    transform-origin: 50px 100px;
+}
+
+
+
+
+@keyframes bategan {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(2);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
