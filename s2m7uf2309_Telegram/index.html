@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="estils.css">
+</head>
+<body>
+
+  <div class="contenidor">
+
+
+    <div class="tema3" id="chat">
+          <div class="bocata3 esquerra3 chat chate">
+          </div>
+
+          <div class="bocata4 dreta4 chat chatd">
+          </div>
+
+       </div>
+
+
+
+
+       <div class="tema" id="default">
+          <div class="bocata1 esquerra default" id="chate">
+          </div>
+
+          <div class="bocata2 dreta default" id="chatd">
+          </div>
+
+          <div class="boto">
+          </div>
+       </div>
+
+      <div class="tema" id="mono">
+          <div class="bocata1 esquerra mono" id="chate">
+          </div>
+
+          <div class="bocata2 dreta mono" id="chatd">
+          </div>
+
+          <div class="boto">
+          </div>
+       </div>
+
+
+
+    <div class="tema"  id="dark">
+          <div class="bocata1 esquerra dark" >
+          </div>
+
+          <div class="bocata2 dreta dark">
+          </div>
+
+          <div class="boto">
+          </div>
+        </div>
+
+
+
+     <div class="tema"  id="artic">
+          <div class="bocata1 esquerra artic">
+          </div>
+
+          <div class="bocata2 dreta artic">
+          </div>
+
+          <div class="boto">
+          </div>
+        </div>
+  </div>
+
+  <div id="barra">
+       <div class="circulos">
+             <div class="bola" id="uno"></div>
+             <div class="bola" id="dos"></div>
+             <div class="bola" id="tres"></div>
+             <div class="bola" id="cuatro"></div>
+             <div class="bola" id="cinco"></div>
+             <div class="bola" id="seis"></div>
+             <input type="color" id="monocolor" value="#DCDCDC">
+       </div>
+  </div>
+
+
+  <div id="barra1">
+       <div class="circulos1">
+             <div class="bola1" id="uno1"></div>
+             <div class="bola1" id="dos2"></div>
+             <div class="bola1" id="tres3"></div>
+             <div class="bola1" id="cuatro4"></div>
+             <div class="bola1" id="cinco5"></div>
+             <div class="bola1" id="seis6"></div>
+             <input type="color" id="darkcolor" value="#DCDCDC">
+       </div>
+  </div>
+
+  <div id="barra2">
+       <div class="circulos2">
+             <div class="bola2" id="one"></div>
+             <div class="bola2" id="two"></div>
+             <div class="bola2" id="three"></div>
+             <div class="bola2" id="four"></div>
+             <div class="bola2" id="five"></div>
+             <div class="bola2" id="six"></div>
+             <input type="color" id="articcolor" value="#DCDCDC">
+       </div>
+  </div>
+
+
+
+  <script type="text/javascript">
+
+
+<!-- variable=colores circulos -->
+var color=["#ef4566","#f69a9a","#f9cdae","#cbcba9","#83ae9b","CORNFLOWERBLUE"];
+var color1=["#DB7093","#DAA8B1","#EED4A6","#808000","#556B2F","#2D2654"];
+var color2=["#eb636b","#FFB6C1","#FFFACD","#EEE8AA","#BDB76B","#F0EAEA"];
+
+var bola=document.getElementsByClassName('bola');
+var bola1=document.getElementsByClassName('bola1');
+var bola2=document.getElementsByClassName('bola2');
+
+for (var k = 0; k < bola.length; k++){
+        bola[k].style.backgroundColor=color[k]
+      }
+
+for (var k = 0; k < bola1.length; k++){
+        bola1[k].style.backgroundColor=color1[k]
+      }
+
+for (var k = 0; k < bola2.length; k++){
+        bola2[k].style.backgroundColor=color2[k]
+      }
+
+
+var chate=document.getElementsByClassName('chate');
+var chatd=document.getElementsByClassName('chatd');
+
+
+<!-- event -->
+document.getElementById('default').addEventListener('click', def);
+document.getElementById('mono').addEventListener('click', mono);
+document.getElementById('dark').addEventListener('click', dark);
+document.getElementById('artic').addEventListener('click', artic);
+
+    <!-- mono -->
+document.getElementById('uno').addEventListener('click', rosafuerte);
+document.getElementById('dos').addEventListener('click', rosaflojo);
+document.getElementById('tres').addEventListener('click', amarillo);
+document.getElementById('cuatro').addEventListener('click', verdeflojo);
+document.getElementById('cinco').addEventListener('click', verdefuerte);
+document.getElementById('seis').addEventListener('click', azul);
+
+
+
+    <!-- dark -->
+document.getElementById('uno1').addEventListener('click', rosafuertedark);
+document.getElementById('dos2').addEventListener('click', rosaflojodark);
+document.getElementById('tres3').addEventListener('click', amarillodark);
+document.getElementById('cuatro4').addEventListener('click', verdeflojodark);
+document.getElementById('cinco5').addEventListener('click', verdefuertedark);
+document.getElementById('seis6').addEventListener('click', azulfuertedark);
+
+
+
+
+    <!-- artic -->
+document.getElementById('one').addEventListener('click', rosafuerteartic);
+document.getElementById('two').addEventListener('click', rosaflojoartic);
+document.getElementById('three').addEventListener('click', amarilloartic);
+document.getElementById('four').addEventListener('click', verdeflojoartic);
+document.getElementById('five').addEventListener('click', verdefuerteartic);
+document.getElementById('six').addEventListener('click', gris);
+
+
+
+<!-- crear funcion -->
+
+function def(){               document.getElementById('chat').style.backgroundColor='ANTIQUEWHITE';
+chate[0].style.backgroundColor='#E9967A';
+chatd[0].style.backgroundColor='#FFC492';
+document.getElementById('barra').style.display="none";
+document.getElementById('barra1').style.display="none";
+document.getElementById('barra2').style.display="none";
+}
+
+function mono(){           document.getElementById('chat').style.backgroundColor='CORNFLOWERBLUE';
+chate[0].style.backgroundColor='#4682B4';
+chate[0].style.filter='brightness(8)';
+
+chatd[0].style.backgroundColor='#B0C4DE';
+chatd[0].style.filter='brightness(8)';
+chatd[0].style.opacity='60%';
+
+document.getElementById('barra').style.display="block";
+document.getElementById('barra1').style.display="none";
+document.getElementById('barra2').style.display="none";
+}
+
+
+function dark(){
+document.getElementById('chat').style.backgroundColor='#2D2654';
+chate[0].style.backgroundColor='MEDIUMPURPLE';
+chate[0].style.filter='brightness(6)';
+
+chatd[0].style.backgroundColor='LAVENDER';
+chatd[0].style.filter='brightness(6)';
+chatd[0].style.opacity='60%';
+
+document.getElementById('barra').style.display="none";
+document.getElementById('barra1').style.display="block";
+document.getElementById('barra2').style.display="none";
+}
+
+
+function artic(){           document.getElementById('chat').style.backgroundColor='#F0EAEA';
+chate[0].style.backgroundColor='#B0C4DE';
+chate[0].style.filter='brightness(8)';
+
+chatd[0].style.backgroundColor='ROYALBLUE';
+chatd[0].style.filter='brightness(8)';
+chatd[0].style.opacity='60%';
+
+document.getElementById('barra').style.display="none";
+document.getElementById('barra1').style.display="none";
+document.getElementById('barra2').style.display="block";
+}
+
+
+
+<!-- mono -->
+function rosafuerte(){
+document.getElementById('chat').style.backgroundColor='#ef4566';
+document.getElementById('mono').style.backgroundColor='#ef4566';
+}
+
+function rosaflojo(){
+document.getElementById('chat').style.backgroundColor='#f69a9a';
+document.getElementById('mono').style.backgroundColor='#f69a9a';
+}
+
+function amarillo(){
+document.getElementById('chat').style.backgroundColor='#f9cdae';
+document.getElementById('mono').style.backgroundColor='#f9cdae';
+}
+
+function verdeflojo(){
+document.getElementById('chat').style.backgroundColor='#cbcba9';
+document.getElementById('mono').style.backgroundColor='#cbcba9';
+}
+
+function verdefuerte(){
+document.getElementById('chat').style.backgroundColor='#83ae9b';
+document.getElementById('mono').style.backgroundColor='#83ae9b';
+}
+
+function azul(){
+document.getElementById('chat').style.backgroundColor='CORNFLOWERBLUE';
+document.getElementById('mono').style.backgroundColor='CORNFLOWERBLUE';
+}
+
+
+<!-- dark -->
+function rosafuertedark(){
+document.getElementById('chat').style.backgroundColor='#DB7093';
+document.getElementById('dark').style.backgroundColor='#DB7093';
+}
+
+function rosaflojodark(){
+document.getElementById('chat').style.backgroundColor='#DAA8B1';
+document.getElementById('dark').style.backgroundColor='#DAA8B1';
+}
+
+function amarillodark(){
+document.getElementById('chat').style.backgroundColor='#EED4A6';
+document.getElementById('dark').style.backgroundColor='#EED4A6';
+}
+
+function verdeflojodark(){
+document.getElementById('chat').style.backgroundColor='#808000';
+document.getElementById('dark').style.backgroundColor='#808000';
+}
+
+function verdefuertedark(){
+document.getElementById('chat').style.backgroundColor='#556B2F';
+document.getElementById('dark').style.backgroundColor='#556B2F';
+}
+
+function azulfuertedark(){
+document.getElementById('chat').style.backgroundColor='#2D2654';
+document.getElementById('dark').style.backgroundColor='#2D2654';
+}
+
+<!-- artic    -->
+function rosafuerteartic(){
+document.getElementById('chat').style.backgroundColor='#FFC0CB';
+document.getElementById('artic').style.backgroundColor='#FFC0CB';
+}
+
+function rosaflojoartic(){
+document.getElementById('chat').style.backgroundColor='#FFB6C1';
+document.getElementById('artic').style.backgroundColor='#FFB6C1';
+}
+
+function amarilloartic(){
+document.getElementById('chat').style.backgroundColor='#FFFACD';
+document.getElementById('artic').style.backgroundColor='#FFFACD';
+}
+
+function verdeflojoartic(){
+document.getElementById('chat').style.backgroundColor='#EEE8AA';
+document.getElementById('artic').style.backgroundColor='#EEE8AA';
+}
+
+function verdefuerteartic(){
+document.getElementById('chat').style.backgroundColor='#BDB76B';
+document.getElementById('artic').style.backgroundColor='#BDB76B';
+}
+
+function gris(){
+document.getElementById('chat').style.backgroundColor='#F0EAEA';
+document.getElementById('artic').style.backgroundColor='#F0EAEA';
+}
+
+
+<!-- input mono -->
+document.getElementById('monocolor').addEventListener('input',canvi);
+
+function canvi(){
+  document.getElementById('mono').style.background=monocolor.value;
+  document.getElementById('chat').style.background=monocolor.value;
+}
+
+
+
+<!-- input dark -->
+document.getElementById('darkcolor').addEventListener('input',canvidos);
+
+function canvidos(){
+  document.getElementById('dark').style.background=darkcolor.value;
+  document.getElementById('chat').style.background=darkcolor.value;
+}
+
+
+
+<!-- input artic -->
+document.getElementById('articcolor').addEventListener('input',canvitres);
+
+function canvitres(){
+  document.getElementById('artic').style.background=articcolor.value;
+  document.getElementById('chat').style.background=articcolor.value;
+}
+
+  </script>
+
+</body>
+</html>
