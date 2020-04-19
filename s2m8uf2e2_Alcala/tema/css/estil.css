@@ -1,0 +1,72 @@
+body{
+background: linear-gradient(50deg, ivory 50%, pink 50%);
+
+}
+
+#logo1{
+    margin-top: 40px;
+}
+
+.cap{
+  height: 589px;
+  background: ;
+}
+
+.cap h1{
+  font-family: Helvetica, Arial, Sans-serif, Bold;
+  font-size: 4em;
+  line-height: 2em;
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.cap img{
+  margin-top: -150px;
+}
+
+.cos p{
+  text-align: left;
+  margin: 10px;
+  font-family: Helvetica, Arial, Sans-serif;
+}
+
+.cos li{
+  width: auto;
+  height: 40px;
+  background: white;
+
+  display: inline-block;
+  margin: 10;
+}
+
+
+.cos2{
+  margin-top: 20px;
+}
+
+
+.cos3{
+  margin-top: 20px;
+}
+
+.cos img{
+  filter: saturate(75%);
+  filter: hue-rotate(150deg);
+}
+
+.cos img:hover{
+  transition: 0.3s;
+  transform: rotate(360deg) scale(1.02);
+
+  -webkit-filter: hue-rotate(350deg);
+  -webkit-filter: saturate(95%);
+}
+
+
+
+
+.coche div{
+  background: white
+
+}
