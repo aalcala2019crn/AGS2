@@ -1,0 +1,24 @@
+
+/*
+body {
+  font-family: 'Kanit', sans-serif;
+  font-size: 1em;
+  margin: 280px;
+  margin-top: 500px;
+  top: 300px;
+  padding: 0;
+}
+
+
+svg {
+  transform: scale(2.4);
+}
+*/
+
+svg {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;

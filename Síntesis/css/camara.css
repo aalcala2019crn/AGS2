@@ -1,0 +1,72 @@
+svg {
+  height: 100%;
+  width: 100%;
+}
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+.arriba {
+  position: fixed;
+  top: 0;
+  background-color: #C4C4C4;
+  height: 8%;
+  width: 100%;
+}
+.icono img{
+  position: fixed;
+  top: 1%;
+  height: 5%;
+}
+.uno {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  top: 25%;
+  background-color: rgb(255,255,255,0.5)
+}
+.dos {
+  position: fixed;
+  width: 100%;
+  z-index: -1;
+  top: 65%;
+  background-color: rgb(255,255,255,0.5)
+}
+.tres {
+  position: fixed;
+  height: 100%;
+  z-index: -1;
+  left: 25%;
+  background-color: rgb(255,255,255,0.5)
+}
+.cuatro {
+  position: fixed;
+  height: 100%;
+  z-index: -1;
+  right: 25%;
+  background-color: rgb(255,255,255,0.5)
+}
+.abajo {
+  position: fixed;
+  bottom: 0;
+  background-color: #C4C4C4;
+  height: 15%;
+  width: 100%;
+}
+.boton img{
+  top: 20px;
+  margin: 0 auto;
+  height: 10%;
+  margin: 0 auto;
+}
+.aiconos5{
+  margin-top: 3%;
+}
+.cent{
+    position: fixed;
+    text-align: center;
+    bottom: 4%;
+    width: 100%;
+    height: 70px;
+}

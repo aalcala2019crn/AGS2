@@ -1,0 +1,593 @@
+<style>
+body{
+    overflow:auto;
+    margin: 0px!important;
+}
+.fuente{
+    font-family: Open Sans;
+}
+#imgM{
+    display: block;
+}
+#movil{
+    display: block;
+    padding: 2%;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+}
+#imgP{
+    display: none;
+}
+#content{
+    display: inline-block;
+    margin-top: 11%;
+
+}
+
+.visible_menu #menu_on>span:nth-child(1),.visible_menu .menu_on>span:nth-child(1){
+	transform: rotate(45deg) translate(-2px,1px);
+}
+
+.visible_menu span:nth-child(2){
+	opacity: 0;
+}
+
+.visible_menu nav{
+	left: 0;
+	opacity: 1;
+}
+#pc{
+    display:none;
+}
+/* .visible_menu #content{
+      transform: translateX(260px);
+} */
+.visible_menu #menu_on>span:nth-child(3),.visible_menu .menu_on>span:nth-child(3){
+	transform: rotate(-45deg) translate(-3px,3px);
+}
+nav{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left:-300px; /* Escondemos nuestro menú con un valor negativo */
+	width: 67%;
+	z-index: 1;
+	background: #FFF;
+	opacity: 0;
+	transition: all 0.75s ease;
+	font-size: 1.2em;
+	overflow-y: auto;
+}
+nav ul{
+  padding: 2% 2% 0% 5%;
+}
+
+#menu_on{
+    top: 8px;
+    left: 9px;
+    float: left;
+	/* display: inline-block; */
+	width:30px;
+	height: 20px;
+	position: relative;
+    z-index: 2;
+
+}
+.menu_on{
+
+	width:30px;
+	height: 20px;
+    z-index: 2;
+    position: absolute;
+    top: 35px;
+    left: 85%;
+}
+.cat{
+    text-align: left;
+    font-weight: 600;
+    margin: 2%;
+    margin-top: 5%;
+}
+
+#menu_on span,.menu_on span{
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	background: #888;
+	transition: all 0.25s ease; /* Propiedades a animar | Tiempo | Tipo animación*/
+	transform-origin : 0px 100%;
+}
+
+#menu_on span:nth-child(2),.menu_on span:nth-child(2){
+	top: calc(50% - 2px);
+}
+
+#menu_on span:nth-child(3),.menu_on span:nth-child(3){
+bottom: 0;
+}
+
+nav a{
+	display:block;
+	text-decoration: none;
+	padding: 10px;
+	color: #000;
+	transition: all ease 0.25s;
+}
+
+.nf{
+    position: absolute;
+    text-align: center;
+    bottom: 4px;
+    width: 100%;
+    border-top: solid 2px #ececec;
+}
+.visible_menu>div>header>div>#menu_on{
+    transition: all ease 0.9s;
+    left: 56%;
+    top: 25px;
+}
+.texto{
+    padding: 12% 10px;
+}
+.nd{
+    padding: 14% 0% 0% 22px;
+}
+.nd>a{
+    padding: 0px;
+
+}
+#search{
+    padding: 2%;
+    width: 80%;
+}
+#search:focus{
+    border: none!important;
+    outline: none!important;
+}
+.container-1 input#search{
+  background: #eae7e7;
+  border: none;
+  color: #63717f;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  border-radius: 30px;
+}
+.container-1 .icon{
+  position: absolute;
+  margin-left: -25px;
+  margin-top: 6px;
+  color: #9d9e9e;
+  font-size: 18px;
+
+}
+.container-1{
+  vertical-align: middle;
+  white-space: nowrap;
+  position: relative;
+}
+.cuerpo{
+    text-align:center;
+    width: 100%;
+    margin-top: 5%;
+    /*margin: 5% auto;*/
+    background-color: white;
+}
+#header{
+    text-align:center;
+    width: 100%;
+    /*margin: 5% auto;*/
+    background-color: white;
+}
+
+.hr1{
+    /* width: 80%; */
+    margin: 0 auto;
+    border: 2px solid #ececec;
+}
+.dom2{
+    width: 100%;
+    margin: 5% auto 2% auto;
+    display: inline-block;
+}
+.nombre{
+    margin: 1% auto 0% 0%;
+    overflow-x: auto;
+}
+.img1{
+    width: 100%;
+}
+.columnas{
+    display: inline-block;
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+}
+.img0{
+    width: 180%;
+}
+.im{
+    width: 16%;
+}
+.divcolumnas{
+    /* width: 40%;
+    margin: 4%;
+    margin-right: 1%;
+    float: left; */
+    width: 45%;
+    margin: 2.5%;
+    float: left;
+}
+
+.divcolumnas1{
+    width: 45%;
+    margin: 2.5%;
+    float: right;
+}
+.a1{
+    margin-left: 8%;
+    margin-bottom: 30px;
+}
+.adom1{
+    text-decoration: none;
+    color: #bfbfbf;
+    font-size: 15px;
+    font-family: monospace;
+    line-height: 20px;
+}
+.adom2{
+    margin: 5%;
+    text-decoration:none;
+}
+.anombre{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    font-weight: 600;
+}
+.acolumnas{
+    position: fixed;
+    background-color: white;
+    border-radius: 35px;
+    height: 5.5%;
+    padding: 1% 1%;
+    bottom: 30px;
+    text-align: center;
+    right: 37.5%;
+}
+.cent{
+    position: fixed;
+    text-align: center;
+    bottom: 15px;
+    width: 100%;
+    height: 70px;
+}
+
+.aiconos5{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    margin: 0px 2px;
+}
+.aiconos4{
+    background-color: white;
+    border-radius: 35px;
+    width: 110px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1%;
+}
+.aiconos4 img{
+    background-color: white;
+    text-align: center;
+}
+.dom3-1{
+    margin: 1.5%;
+    margin-bottom: 3%;
+    overflow-x: auto;
+}
+.dom3{
+    margin: 1% auto 0% 0%;
+    overflow-x: auto;
+}
+.adom3{
+    text-decoration: none;
+    font-size: small;
+    color: black;
+    font-weight: 600;
+}
+@media (min-width: 767px){
+    #content {
+        display: inline-block;
+        margin-top: 2%;
+    }
+    #movil,nav{
+        display: none;
+    }
+    .a1 {
+        font-size: medium;
+    }
+    #imgM{
+        display: none;
+    }
+    #imgP{
+        display: block;
+    }
+    .cat{
+        text-align: center;
+        margin-bottom: 1%;
+        margin-top: 3.5%;
+
+    }
+    .img0 {
+        width: 60%;
+        margin: auto;
+    }
+    #pc{
+        display: block;
+        position: fixed;
+        width: 100%;
+
+    }
+    #content {
+        width: 100%;
+    }
+    .texto {
+        text-decoration: none;
+        color: #000;
+        padding: 1% 3%;
+        align-items: center;
+        vertical-align: sub;
+    }
+    .pc-ul{
+        padding: 2.5% 1% 3.4% 1%;
+        margin-top: -15px;
+        background-color: white;
+        }
+    body {
+        display: block;
+        margin: 0px;
+    }
+    .acolumnas {
+        position: fixed;
+        background-color: white;
+        border-radius: 35px;
+        height: 5.5%;
+        padding: 10px 5px;
+        padding-top: 5px;
+        bottom: 30px;
+        text-align: center;
+        right: 46.2%;
+    }
+    .dom {
+        text-align: center;
+        width: 100%;
+        margin-top: 0px;
+        display: inline-block;
+        margin-top: auto;
+    }
+    .hr1{
+        display: none;
+    }
+    .divcolumnas1,.divcolumnas{
+        margin-top: 1%;
+    }
+    .divcolumnas {
+        width: 21%;
+        margin: 0% 2%;
+        /* margin-right: 1%; */
+        float: left;
+    }
+    .divcolumnas1 {
+        width: 21%;
+        margin: 0% 2%;
+        /* margin-right: 1%; */
+        float: right;
+    }
+    .menupc{
+        text-align: left;
+        float:left;
+        width: 50%;
+    }
+    .box{
+        width: 40%;
+        float: right;
+        margin-top: -10px;
+    }
+}
+@media (min-width: 767px){
+    #content {
+        display: inline-block;
+        margin-top: 2%;
+    }
+    .divpc{
+        display: block;
+    }
+    #imgM{
+        display: none;
+    }
+    #imgP{
+        display: block;
+    }
+    .im1{
+        width: 100%;
+    }
+    .img2 {
+        width: 280%;
+    }
+    .cat{
+        text-align: center;
+        margin-bottom: 1%;
+        margin-top: 3.5%;
+
+    }
+    .div2 {
+        margin: 0% 5px;
+        margin-left: 12px;
+        float: left;
+        /* width: 9%; */
+    }
+    .img0 {
+        width: 60%;
+        margin: auto;
+    }
+
+    #content {
+        width: 100%;
+    }
+    .na {
+        text-decoration: none;
+        color: #000;
+        padding: 1% 3%;
+        align-items: center;
+        vertical-align: sub;
+    }
+    .pc-ul{
+        padding: 2.5% 1% 3.4% 1%;
+        margin-top: -15px;
+        background-color: white;
+        }
+    body {
+        display: block;
+        margin: 0px;
+    }
+    .adom4 {
+        position: fixed;
+        background-color: white;
+        border-radius: 35px;
+        height: 5.5%;
+        padding: 10px 5px;
+        padding-top: 5px;
+        bottom: 30px;
+        text-align: center;
+        right: 46.2%;
+    }
+    .dom {
+        text-align: center;
+        width: 100%;
+        margin-top: 0px;
+        display: inline-block;
+        margin-top: auto;
+    }
+    .hr1{
+        display: none;
+    }
+    .divdom41,.divdom4{
+        margin-top: 1%;
+    }
+    .divdom4 {
+        width: 21%;
+        margin: 0% 2%;
+        /* margin-right: 1%; */
+        float: left;
+    }
+    .divdom41 {
+        width: 21%;
+        margin: 0% 2%;
+        /* margin-right: 1%; */
+        float: right;
+    }
+    .menupc{
+        text-align: left;
+        float:left;
+        width: 50%;
+    }
+    .box{
+        width: 40%;
+        float: right;
+        margin-top: -10px;
+    }
+}
+@media (max-width: 410px){
+    .img2 {
+        width: 250%;
+    }
+}
+@media (max-width: 350px){
+    .img2 {
+        width: 284%;
+    }
+}
+@media (max-width: 300px){
+
+    .img2 {
+        width: 310%;
+    }
+}
+@media (max-width: 250px){
+    .img2 {
+        width: 350%;
+    }
+}
+
+@media (min-width: 980px){
+    #movil,nav{
+        display: none;
+    }
+    .container-1>form{
+        margin-top: 3%;
+    }
+    #pc{
+        display: block;
+        position: fixed;
+        width: 100%;
+    }
+    .div2 {
+        margin: 0% 40px;
+        margin-left: 12px;
+        margin-right: 50px;
+        float: left;
+        /* width: 9%; */
+    }
+    .img2 {
+        width: 270%;
+    }
+    .im1{
+        width: 120%;
+    }
+}
+@media (min-width: 1100px){
+    .div2 {
+    margin: 0% 40px;
+    margin-left: 12px;
+    margin-right: 60px;
+    float: left;
+    /* width: 9%; */
+    }
+
+    .im1{
+        width: 250%;
+    }
+}
+
+@media (min-width: 1200px){
+    .div2 {
+    margin: 0% 40px;
+    margin-left: 12px;
+    margin-right: 70px;
+    float: left;
+    /* width: 9%; */
+}
+    .im1{
+        width: 140%;
+    }
+}
+@media (min-width: 1300px){
+    .div2 {
+    margin: 0% 40px;
+    margin-left: 12px;
+    margin-right: 88px;
+    float: left;
+    /* width: 9%; */
+    }
+     .img2 {
+        width: 220%;
+    }
+    .im1{
+        width: 160%;
+    }
+}
+
+</style>

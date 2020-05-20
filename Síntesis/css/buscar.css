@@ -1,0 +1,12 @@
+body {
+    font-family: 'Kanit', sans-serif;
+    font-size: 1em;
+    margin: 280px;
+    margin-top: 500px;
+    top: 250px;
+    padding: 0;
+}
+
+svg {
+    transform: scale(2.4);
+}

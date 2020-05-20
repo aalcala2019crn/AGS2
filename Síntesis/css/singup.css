@@ -1,0 +1,11 @@
+body {
+  margin: 280px;
+  margin-top: 500px;
+  top: 300px;
+  padding: 0;
+}
+
+
+svg {
+  transform: scale(2.4);
+}
