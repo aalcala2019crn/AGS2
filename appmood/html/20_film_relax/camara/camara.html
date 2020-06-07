@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="red">
+  <meta name="theme-color" content="red">
+  <meta name="msapplication-navbutton-color" content="red">
+  <link rel="icon" sizes="192x92" href="../../../img/logo.png">
+  <link rel="icon" sizes="512x512" href="../../../img/logo.png">
+  <link rel="apple-touch-icon" href="../../../img/logo.png">
+  <link rel="stylesheet" href="../../../css/camara.css">
+  <title>AppMood</title>
+</head>
+
+<body>
+  <div class="medio">
+  	<img class="fondo" src="img/.png" alt="">
+  		<hr class="uno">
+  		<hr class="dos">
+  		<hr class="tres">
+  		<hr class="cuatro">
+  </div>
+  <div class="arriba">
+      <a class="icono" href="../filmrelax.html" style="float: left;">
+            <img src="../../../img/vector.png" alt="">
+      </a>
+  </div>
+  <div class="flash">
+      <img src="../../../img/flash.png" alt="">
+  </div>
+  <div class="abajo">
+      <div class="cent">
+          <div>
+              <a class="aiconos5" href="#">
+                  <img src="../../../img/boton.png" alt="">
+              </a>
+              <hr>
+              <div id="div_file">
+          			<p id="texto">Gallery</p>
+          			<input type="file" accept="imatge/*" multiple="true" id="contingut">
+          		</div>
+          </div>
+      </div>
+  </div>
+
+  <script type="text/javascript">
+    var contingut=document.getElementById('contingut');
+    var imatge=document.getElementsByTagName('img');
+    var desenfoque=document.getElementById('blur');
+
+
+      contingut.addEventListener('change', canvia);
+
+    function canvia(){
+      imatge[0].src=URL.createObjectURL(event.target.files[0]);
+      imatge[1].src=URL.createObjectURL(event.target.files[1]);
+    }
+
+  </script>
+
+</body>
+</html>
