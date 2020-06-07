@@ -1,0 +1,102 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Open Sans;
+    color: #fff;
+    font-size: 1.1rem;
+}
+.fondo {
+    position: fixed;
+    top: 8%;
+
+    height: 75%;
+    width: 100%;
+
+}
+.arriba {
+    position: fixed;
+    top: 0;
+    background-color: #C4C4C4;
+    height: 8%;
+    width: 100%;
+}
+.icono img{
+    position: fixed;
+    top: 1%;
+    height: 5%;
+}
+.uno {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    top: 25%;
+    background-color: rgb(255,255,255,0.5)
+}
+.dos {
+    position: fixed;
+    width: 100%;
+    z-index: -1;
+    top: 65%;
+    background-color: rgb(255,255,255,0.5)
+}
+.tres {
+    position: fixed;
+    height: 100%;
+    z-index: -1;
+    left: 25%;
+    background-color: rgb(255,255,255,0.5)
+}
+.cuatro {
+    position: fixed;
+    height: 100%;
+    z-index: -1;
+    right: 25%;
+    background-color: rgb(255,255,255,0.5)
+}
+.flash {
+    position: fixed;
+    bottom: 10%;
+    height: 15%;
+    right: 5%;
+    transform: scale(1.3);
+}
+.abajo {
+    position: fixed;
+    bottom: 0;
+    background-color: #C4C4C4;
+    height: 20%;
+    width: 100%;
+}
+.boton img{
+    top: 20px;
+    margin: 0 auto;
+    height: 15%;
+    margin: 0 auto;
+}
+.aiconos5 {
+  margin-top: 3%;
+
+}
+.cent{
+    position: fixed;
+    text-align: center;
+    bottom: 10%;
+    width: 100%;
+    height: 70px;
+}
+input#contingut{
+	position:absolute;
+	top:0px;
+	left:0px;
+	right:0px;
+	bottom:0px;
+	width:100%;
+	height:100%;
+	opacity: 0;
+}
+div#div_file{
+	position:relative;
+  text-decoration: none;
+  bottom: 10px;
+}

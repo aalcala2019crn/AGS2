@@ -1,0 +1,108 @@
+} */
+body{
+    overflow:hidden ;
+}
+.end{
+    font-family: Open Sans;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 33px;
+    display: flex;
+    align-items: center;
+    color: #9B9999;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    margin: 10px;
+
+    background: rgba(255, 255, 255, 0.5);
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+
+body {
+    font-family: 'Open Sans',Regular , sans-serif;
+    text-align: center;
+    background: white;
+}
+.labels {
+  display: inline-block;
+  text-align: right;
+  width: 47%;
+  padding: 5px;
+  vertical-align: top;
+  margin-top: 10px;
+}
+.rightTab {
+  display: inline-block;
+  text-align: left;
+  width: 48%;
+  vertical-align: middle;
+}
+#encuesta{
+
+  margin: 0 auto;
+  border-radius: 4px;
+  width: 75%;
+  height: 90%;
+  padding: 10px;
+  padding-top: 20px;
+}
+.input-field {
+  height: 20px;
+  width: 280px;
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+.dropdown{
+  height: 30px;
+  width: 200px;
+  padding: 5px;
+  margin: 10px;
+  margin-top: 15px;
+  border: 1px solid #c0c0c0;
+  border-radius: 2px;
+}
+#submit {
+  background-color: #59ace0;
+  border-radius: 4px;
+  color: white;
+  font-size: 1em;
+  height: 40px;
+  width: 96px;
+  margin: 10px;
+  border: 0px solid;
+}
+#submit:hover{
+  background-color: #4791d0;
+
+}
+@media screen and (max-width: 833px) {
+  .input-field {
+    width: 80%;
+  }
+  select {
+    width: 90%;
+  }
+   .dropdown{
+    width: 80%;
+  }
+}
+
+#description{
+  text-align: center;
+}
+
+.rowTab{
+  margin-bottom: 5%;
+}
+.labels{
+  width: 60%;
+  text-align: center;
+  margin-left: -10%;
+  color: #FAC171;
+}
